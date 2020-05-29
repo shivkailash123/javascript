@@ -1,0 +1,60 @@
+<html>
+  <body>
+    <script type="text/javascript">
+     
+     //Person class
+
+     class Person{
+         constructor(_name,_age){
+           this.name = _name;
+           this.age = _age;
+         }
+         description(){
+             console.log("Name is "+this.name+" age is "+this.age);
+         }
+     }
+     class Devloper extends Person{
+         constructor(_name,_age,_yearofexperience){
+            super(_name,_age);
+             this.name = _name;
+             this.age = _age;
+             this.yearofexperience = _yearofexperience;
+             
+         }
+         
+         description(){
+             console.log("Year of experinece is "+this.yearofexperience+" Name is"+this.name);
+         }
+     }
+
+
+    // let dev = new Devloper("shiv",23,2);
+    // dev.description();
+
+
+    const programmer = [
+      
+      new Devloper("arun",26,4),
+      new Devloper("ashish",34,11),
+      new Devloper("shiv",23,1)
+
+
+    ];
+    developSoftware(programmer);
+
+    function developSoftware(programmer){
+        for(let vars of programmer){
+          console.log(vars);
+        }
+    }
+
+     </script>
+
+
+
+  </body>
+
+
+
+
+</html>

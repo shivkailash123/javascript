@@ -1,0 +1,37 @@
+<html>
+
+<body>
+    <script>
+    class Reactangle{
+        constructor(_width,_height,_color){
+            console.log("This is rectangle method");
+            this.width = _width;
+            this.height = _height;
+            this.color = _color;
+            console.log(this.width,this.height,this.color);
+        }
+        getArea(){
+            return this.width*this.height;
+        }
+
+        printDiscription(){
+            console.log("The value is "+this.height+" "+this.width+"And color is"+this.color);
+        }
+    }
+    console.log("hello world")
+    let myRectangle = new Reactangle(10,20,"Red");
+    let myRectangle1 = new Reactangle(10,5,"Red");
+
+
+    console.log(myRectangle.getArea());
+    console.log(myRectangle.printDiscription());
+
+</script>
+
+
+</body>
+
+
+
+
+</html>

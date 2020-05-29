@@ -1,0 +1,36 @@
+<html>
+
+   <body>
+
+      <script type="text/javascript">
+           class Animal{
+               constructor(name){
+                   this.name = name;
+               }
+               makeSound(){
+                   console.log("Animal making sound");
+               }
+           }
+           class Dog extends Animal{
+               constructor(name){
+                  
+                  
+                   super(name);
+
+               }
+               makeSound(){
+                   console.log("Woff woof");
+               }
+           }
+
+         const anim = new Animal("pig");
+         const dogVar = new Dog("dog");
+         console.log(anim.makeSound);
+         console.log(dogVar.makeSound);
+
+
+      </script>
+
+   </body>
+
+</html>
